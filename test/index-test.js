@@ -20,7 +20,7 @@ describe('Map/reduce lab', () => {
     it('should not have modified the original objects in the `issues` array', function () {
       const hasPassed = issues.every(issue => {
         const hasOldUrl = issue.url.includes('api.github.com');
-        return hasOldUrl;
+        return hasOldUrl;1
       });
       expect(hasPassed).toBeTruthy('The original objects in the `issues` array have been modified.');
     });
